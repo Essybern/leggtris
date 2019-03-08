@@ -1,7 +1,7 @@
 # leggtris
 Spæl, ið tú skal laga grót
 
-​# Vegleiðing
+# Vegleiðing
 clona repository 
 git clone https://github.com/Essybern/leggtris.git
 opna projeckt mappuna leggtris við Unity
