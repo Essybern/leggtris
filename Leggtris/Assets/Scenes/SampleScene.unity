@@ -295,9 +295,10 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,11 +359,25 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1737854052}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f7f165a9b5b244cbebee6b32bf17cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  nextShape: {fileID: 0}
+  shapePrefab: {fileID: 323302345}
+  gameOver: 0
 --- !u!1 &1000584497
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +471,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4820665735966630, guid: 50683f5385f7c1f49bdfaf36edcd036c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.26
+      value: -8.39
       objectReference: {fileID: 0}
     - target: {fileID: 4820665735966630, guid: 50683f5385f7c1f49bdfaf36edcd036c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -482,58 +497,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 54708648254542142, guid: 50683f5385f7c1f49bdfaf36edcd036c,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50683f5385f7c1f49bdfaf36edcd036c, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1737854051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1737854052}
-  - component: {fileID: 1737854053}
-  m_Layer: 9
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1737854052
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1737854051}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 534669905}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1737854053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1737854051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f7f165a9b5b244cbebee6b32bf17cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  nextShape: {fileID: 0}
-  shapePrefab: {fileID: 323302345}
-  gameOver: 0
 --- !u!1 &1824409911
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Rock : MonoBehaviour {
 
 
     private bool controlEnabled = true;
+    private bool collided = false;
     protected Rigidbody rockRigidbody;
     private SphereCollider collidertest;
 
@@ -34,7 +35,10 @@ public class Rock : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        controlEnabled = false;
-        GameController.Controller.DeployShape();
+        if (!collided) {
+            controlEnabled = false;
+            collided = true;
+            GameController.Controller.DeployShape();
+        }
     }
 }
