@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour {
 
     public void DeployShape()
     {
-        Instantiate(shapePrefab, new Vector3(0f, 5.69f, -1.38f), Quaternion.identity);
+        Instantiate(shapePrefab, new Vector3(0f, 5.3f, -1.38f), Quaternion.identity);
     }
 
     public void IncreaseScore()
