@@ -35,9 +35,15 @@ public class Rock : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collided) {
+        if (collision.rigidbody.position.y >= 4.3f)
+        {
+            GameController.Controller.EndGame();
+        }
+
+        if (!collided && !GameController.Controller.gameOver) {
             controlEnabled = false;
             collided = true;
+            
             GameController.Controller.DeployShape();
         }
     }
